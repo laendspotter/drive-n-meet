@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>drive'n'meet — Blitzer-Radar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <a href="index.html" class="logo">drive<span>'n'</span>meet</a>
+  <nav class="navlinks">
+    <a href="index.html" class="navlink">start</a>
+    <a href="blitzer.html" class="navlink">blitzer-radar</a>
+    <a href="profil.html" class="navlink">profil</a>
+    <a href="convoy.html" class="navlink">convoy-ping</a>
+    <a href="spots.html" class="navlink">spot-feed</a>
+  </nav>
+  <div class="demo-tag">SCHULPROJEKT · <b>SIMULIERT</b></div>
+</div>
+
+<div class="wrap page-header fade-in">
+  <span class="eyebrow">01 — BLITZER-RADAR</span>
+  <h1>nie wieder<br>geblitzt werden</h1>
+  <p>community meldet blitzer in echtzeit, du siehst sie auf der karte bevor du dran vorbei fährst.</p>
+</div>
+
+<section>
+  <div class="wrap fade-in">
+    <div class="map-card">
+      <div class="map-canvas">
+        <div class="pin you" style="top:50%;left:50%;"></div>
+        <div class="pin" style="top:28%;left:30%;"></div>
+        <div class="pin" style="top:65%;left:70%;"></div>
+        <div class="pin teal" style="top:35%;left:75%;"></div>
+        <div class="pin teal" style="top:78%;left:25%;"></div>
+      </div>
+      <div class="map-list">
+        <div class="map-row"><span class="where">B294 · höhe freudenstadt</span><span class="when mono">vor 4 min</span></div>
+        <div class="map-row"><span class="where">A81 · km 612</span><span class="when mono">vor 11 min</span></div>
+        <div class="map-row"><span class="where">L370 · ortseingang</span><span class="when mono">vor 22 min</span></div>
+        <div class="map-row"><span class="where">aussichtspunkt kniebis</span><span class="when mono">community spot</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span class="badge mono">DEMO BUILD · ALLE FUNKTIONEN SIND NICHT ECHT</span>
+  <div>showcase für schulprojekt · gymnasium dornstetten</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

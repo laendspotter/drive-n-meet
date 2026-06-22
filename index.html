@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>drive'n'meet — Schulprojekt Showcase</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <a href="index.html" class="logo">drive<span>'n'</span>meet</a>
+  <nav class="navlinks">
+    <a href="index.html" class="navlink">start</a>
+    <a href="blitzer.html" class="navlink">blitzer-radar</a>
+    <a href="profil.html" class="navlink">profil</a>
+    <a href="convoy.html" class="navlink">convoy-ping</a>
+    <a href="spots.html" class="navlink">spot-feed</a>
+  </nav>
+  <div class="demo-tag">SCHULPROJEKT · <b>SIMULIERT</b></div>
+</div>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">CONCEPT SHOWCASE — KEIN ECHTES PRODUKT</span>
+      <h1>drive<br>'n' meet</h1>
+      <p>blitzer auf der karte, dein kennzeichen im profil, und ein ping wenn jemand in der nähe das gleiche ziel hat. alle screens hier sind mockups mit fake-daten — keine echte standortverfolgung.</p>
+      <div class="hero-stats">
+        <div class="stat"><span class="num mono" id="statUsers">2.481</span><span class="lab">aktive fahrer (demo)</span></div>
+        <div class="stat"><span class="num mono" id="statPings">37</span><span class="lab">pings heute (demo)</span></div>
+        <div class="stat"><span class="num mono">512</span><span class="lab">gemeldete spots</span></div>
+      </div>
+    </div>
+    <div class="radar-box">
+      <div class="radar-ring"></div>
+      <div class="radar-ring r2"></div>
+      <div class="radar-ring r3"></div>
+      <div class="radar-ring r4"></div>
+      <div class="radar-sweep"></div>
+      <div class="radar-center"></div>
+      <div class="blip" style="top:30%;left:62%;"></div>
+      <div class="blip b2" style="top:68%;left:38%;"></div>
+      <div class="radar-label" style="top:24%;left:64%;">DU</div>
+      <div class="radar-label" style="top:72%;left:18%;" id="radarDist">480m</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="feature-grid fade-in">
+      <a href="blitzer.html" class="feature-card">
+        <span class="idx">01</span>
+        <h3>Blitzer-Radar</h3>
+        <p>community meldet blitzer in echtzeit, du siehst sie auf der karte bevor du dran vorbei fährst.</p>
+      </a>
+      <a href="profil.html" class="feature-card">
+        <span class="idx">02</span>
+        <h3>Profil</h3>
+        <p>dein auto, dein kennzeichen, deine stats — einmal eingerichtet, läuft der rest automatisch.</p>
+      </a>
+      <a href="convoy.html" class="feature-card">
+        <span class="idx">03</span>
+        <h3>Convoy-Ping</h3>
+        <p>wer fährt gerade in deine richtung? matched ihr, gibt's ein gemeinsames ziel oder ne challenge.</p>
+      </a>
+      <a href="spots.html" class="feature-card">
+        <span class="idx">04</span>
+        <h3>Spot-Feed</h3>
+        <p>aussichtspunkte, treffpunkte, fotospots — geteilt von der community.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span class="badge mono">DEMO BUILD · ALLE FUNKTIONEN SIND NICHT ECHT</span>
+  <div>showcase für schulprojekt · gymnasium dornstetten</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

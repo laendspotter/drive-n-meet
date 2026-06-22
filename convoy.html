@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>drive'n'meet — Convoy-Ping</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <a href="index.html" class="logo">drive<span>'n'</span>meet</a>
+  <nav class="navlinks">
+    <a href="index.html" class="navlink">start</a>
+    <a href="blitzer.html" class="navlink">blitzer-radar</a>
+    <a href="profil.html" class="navlink">profil</a>
+    <a href="convoy.html" class="navlink">convoy-ping</a>
+    <a href="spots.html" class="navlink">spot-feed</a>
+  </nav>
+  <div class="demo-tag">SCHULPROJEKT · <b>SIMULIERT</b></div>
+</div>
+
+<div class="wrap page-header fade-in">
+  <span class="eyebrow">03 — CONVOY-PING</span>
+  <h1>wer fährt gerade<br>in deine richtung?</h1>
+  <p>matched ihr, könnt ihr ein gemeinsames ziel festlegen oder euch für ne challenge connecten.</p>
+</div>
+
+<section>
+  <div class="wrap fade-in">
+    <div class="ping-card">
+      <div>
+        <div class="ping-status">match gefunden — 480m entfernt, gleiche richtung</div>
+        <h3 style="font-size:26px;margin-bottom:6px;">flo_94</h3>
+        <div style="color:var(--text-dim);font-size:13px;margin-bottom:18px;">BMW 3er · fährt seit 6 min parallel</div>
+        <div class="ping-actions">
+          <button class="btn primary">ziel vorschlagen: mcdonald's freudenstadt</button>
+          <button class="btn">kickdown-challenge anzeigen</button>
+        </div>
+        <div class="tell-tale">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#ff8a3d" stroke-width="2"><path d="M12 2 1 21h22L12 2z"/><path d="M12 9v5"/><circle cx="12" cy="17" r="0.5" fill="#ff8a3d"/></svg>
+          <span>kickdown-challenges sind als konzept für geschlossenes gelände gedacht — auf öffentlicher straße wäre ein spontanes rennen ein verstoß gegen §315d StGB. deshalb bleibt's hier bei der simulation.</span>
+        </div>
+      </div>
+      <div class="radar-box" style="max-width:260px;">
+        <div class="radar-ring"></div>
+        <div class="radar-ring r2"></div>
+        <div class="radar-ring r3"></div>
+        <div class="radar-center"></div>
+        <div class="blip" style="top:46%;left:52%;"></div>
+        <div class="blip b2" style="top:60%;left:30%;"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span class="badge mono">DEMO BUILD · ALLE FUNKTIONEN SIND NICHT ECHT</span>
+  <div>showcase für schulprojekt · gymnasium dornstetten</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
