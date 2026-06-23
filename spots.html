@@ -6,6 +6,7 @@
 <title>drive'n'meet — Spot-Feed</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,7 +20,6 @@
     <a href="convoy.html" class="navlink">convoy-ping</a>
     <a href="spots.html" class="navlink">spot-feed</a>
   </nav>
-  <div class="demo-tag">SCHULPROJEKT · <b>SIMULIERT</b></div>
 </div>
 
 <div class="wrap page-header fade-in">
@@ -30,6 +30,10 @@
 
 <section>
   <div class="wrap fade-in">
+    <div class="map-card" style="margin-bottom:24px;">
+      <div id="spots-map" style="height:350px;border-radius:var(--radius-md);"></div>
+    </div>
+
     <div class="feed">
       <div class="feed-card">
         <div>
@@ -50,7 +54,7 @@
       <div class="feed-card">
         <div>
           <span class="tag">FOTOSPOT</span>
-          <div class="title">brücke b28 — gutes licht ab 20 uhr</div>
+          <div class="title">brücke b28 bei baiersbronn</div>
           <div class="meta">gemeldet von jo_drives · 4.1 km entfernt</div>
         </div>
         <div class="upvote">▲ 56</div>
@@ -60,10 +64,10 @@
 </section>
 
 <footer>
-  <span class="badge mono">DEMO BUILD · ALLE FUNKTIONEN SIND NICHT ECHT</span>
-  <div>showcase für schulprojekt · gymnasium dornstetten</div>
+  <div>© 2026 drive'n'meet</div>
 </footer>
 
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
