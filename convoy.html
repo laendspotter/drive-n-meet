@@ -6,6 +6,7 @@
 <title>drive'n'meet — Convoy-Ping</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,7 +20,6 @@
     <a href="convoy.html" class="navlink">convoy-ping</a>
     <a href="spots.html" class="navlink">spot-feed</a>
   </nav>
-  <div class="demo-tag">SCHULPROJEKT · <b>SIMULIERT</b></div>
 </div>
 
 <div class="wrap page-header fade-in">
@@ -30,21 +30,33 @@
 
 <section>
   <div class="wrap fade-in">
-    <div class="ping-card">
+    <div class="map-card" style="margin-bottom:24px;">
+      <div id="convoy-map" style="height:400px;border-radius:var(--radius-md);"></div>
+    </div>
+
+    <div class="convoy-status-bar">
+      <div class="convoy-driver">
+        <span class="convoy-dot you-dot"></span>
+        <span><b>du</b> · VW Golf 7 GTI</span>
+      </div>
+      <div class="convoy-dist mono" id="convoyDist">480m</div>
+      <div class="convoy-driver">
+        <span class="convoy-dot match-dot"></span>
+        <span><b>flo_94</b> · BMW 3er</span>
+      </div>
+    </div>
+
+    <div class="ping-card" style="margin-top:24px;">
       <div>
-        <div class="ping-status">match gefunden — 480m entfernt, gleiche richtung</div>
+        <div class="ping-status" id="pingStatus">match gefunden — gleiche richtung</div>
         <h3 style="font-size:26px;margin-bottom:6px;">flo_94</h3>
-        <div style="color:var(--text-dim);font-size:13px;margin-bottom:18px;">BMW 3er · fährt seit 6 min parallel</div>
+        <div style="color:var(--text-dim);font-size:13px;margin-bottom:18px;">BMW 3er · fährt parallel auf der B294</div>
         <div class="ping-actions">
           <button class="btn primary">ziel vorschlagen: mcdonald's freudenstadt</button>
           <button class="btn">kickdown-challenge anzeigen</button>
         </div>
-        <div class="tell-tale">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#ff8a3d" stroke-width="2"><path d="M12 2 1 21h22L12 2z"/><path d="M12 9v5"/><circle cx="12" cy="17" r="0.5" fill="#ff8a3d"/></svg>
-          <span>kickdown-challenges sind als konzept für geschlossenes gelände gedacht — auf öffentlicher straße wäre ein spontanes rennen ein verstoß gegen §315d StGB. deshalb bleibt's hier bei der simulation.</span>
-        </div>
       </div>
-      <div class="radar-box" style="max-width:260px;">
+      <div class="radar-box" style="max-width:220px;">
         <div class="radar-ring"></div>
         <div class="radar-ring r2"></div>
         <div class="radar-ring r3"></div>
@@ -57,10 +69,10 @@
 </section>
 
 <footer>
-  <span class="badge mono">DEMO BUILD · ALLE FUNKTIONEN SIND NICHT ECHT</span>
-  <div>showcase für schulprojekt · gymnasium dornstetten</div>
+  <div>© 2026 drive'n'meet</div>
 </footer>
 
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

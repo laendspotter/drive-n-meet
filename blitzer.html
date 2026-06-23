@@ -6,6 +6,7 @@
 <title>drive'n'meet — Blitzer-Radar</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,7 +20,6 @@
     <a href="convoy.html" class="navlink">convoy-ping</a>
     <a href="spots.html" class="navlink">spot-feed</a>
   </nav>
-  <div class="demo-tag">SCHULPROJEKT · <b>SIMULIERT</b></div>
 </div>
 
 <div class="wrap page-header fade-in">
@@ -31,28 +31,22 @@
 <section>
   <div class="wrap fade-in">
     <div class="map-card">
-      <div class="map-canvas">
-        <div class="pin you" style="top:50%;left:50%;"></div>
-        <div class="pin" style="top:28%;left:30%;"></div>
-        <div class="pin" style="top:65%;left:70%;"></div>
-        <div class="pin teal" style="top:35%;left:75%;"></div>
-        <div class="pin teal" style="top:78%;left:25%;"></div>
-      </div>
+      <div id="blitzer-map" style="height:420px;border-radius:var(--radius-md) var(--radius-md) 0 0;"></div>
       <div class="map-list">
         <div class="map-row"><span class="where">B294 · höhe freudenstadt</span><span class="when mono">vor 4 min</span></div>
-        <div class="map-row"><span class="where">A81 · km 612</span><span class="when mono">vor 11 min</span></div>
-        <div class="map-row"><span class="where">L370 · ortseingang</span><span class="when mono">vor 22 min</span></div>
-        <div class="map-row"><span class="where">aussichtspunkt kniebis</span><span class="when mono">community spot</span></div>
+        <div class="map-row"><span class="where">A81 · höhe horb</span><span class="when mono">vor 11 min</span></div>
+        <div class="map-row"><span class="where">L370 · ortseingang dornstetten</span><span class="when mono">vor 22 min</span></div>
+        <div class="map-row"><span class="where">B28 · richtung baiersbronn</span><span class="when mono">vor 38 min</span></div>
       </div>
     </div>
   </div>
 </section>
 
 <footer>
-  <span class="badge mono">DEMO BUILD · ALLE FUNKTIONEN SIND NICHT ECHT</span>
-  <div>showcase für schulprojekt · gymnasium dornstetten</div>
+  <div>© 2026 drive'n'meet</div>
 </footer>
 
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
